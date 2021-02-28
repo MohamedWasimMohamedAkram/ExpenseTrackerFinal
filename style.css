@@ -1,0 +1,115 @@
+body {
+    text-align: center;
+    margin: 0 auto;
+    background-color: black;
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: center/cover;
+    background-position: center;
+    color: whitesmoke;
+    font-family: "Montserrat", sans-serif;
+    font-size: x-large;
+}
+
+table {
+    border: thin solid black;
+    border-collapse: collapse;
+    margin: auto;
+    width: 600px;
+    color: black;
+    font-size: large;
+    font-family: "Montserrat", sans-serif;
+    padding: 10px;
+}
+
+td,
+th {
+    border: thin solid black;
+    padding: 10px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+th {
+    background-color: black;
+    color: whitesmoke;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}
+
+form {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    width: 600px;
+    color: black;
+    border-radius: 30px;
+    border: 3px solid #333;
+    font-size: large;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+}
+
+#form-row-1 {
+    display: flex;
+    justify-content: center;
+}
+
+#form-row-2 {
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+    padding-bottom: 10px;
+}
+
+#date-div {
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+#where-div {
+    margin-left: 30px;
+}
+#amout {
+    width: 100px;
+}
+
+h1 {
+    margin: 20px auto;
+    width: 400px;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.delete {
+    border-radius: 10px;
+    background-color: rgb(51, 37, 248);
+    color: whitesmoke;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.delete:hover {
+    border: solid red 1px;
+}
+
+.delete:active {
+    background-color: red;
+}
+
+.input,
+#remove-all,
+#clear,
+label {
+    cursor: pointer;
+}

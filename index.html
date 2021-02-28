@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vanilla Expense Tracker</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <h1>Expense Tracker</h1>
+
+        <form id="form">
+            <div id="form-row-1">
+                <div id="amount-div">
+                    Amount: <br />
+                    <input
+                        id="amount"
+                        class="form-control form-icon-trailing input"
+                        type="number"
+                        placeholder="Enter Amount"
+                        style="text-align: center"
+                        required
+                    />
+                    <p></p>
+                </div>
+                <div id="where-div">
+                    Location: <br />
+                    <input
+                        id="place"
+                        class="form-control form-icon-trailing input"
+                        type="text"
+                        placeholder="Enter Location?"
+                        style="text-align: center"
+                        required
+                    />
+                    <p></p>
+                </div>
+            </div>
+
+            <div id="form-row-2">
+                <div id="date-div">
+                    Date: <br />
+                    <input type="date" id="date" class="form-control form-icon-trailing input" required />
+                    <p></p>
+                </div>
+                <div id="type-buttons" style="text-align: left">
+                    Type: <br />
+
+                    <input checked id="radio-cash" type="radio" class="form-check-input input" name="payment-type" value="Cash" />
+                    <label for="radio-cash">Cash</label> <br />
+                    <input id="radio-credit" type="radio" class="form-check-input input" name="payment-type" value="Credit" />
+                    <label for="radio-credit">Credit Card </label><br />
+                    <input id="radio-debit" type="radio" class="form-check-input input" name="payment-type" value="Debit" />
+                    <label for="radio-debit">Debit Card</label> <br />
+                    <input id="radio-crypto" type="radio" class="form-check-input input" name="payment-type" value="Crypto" />
+                    <label for="radio-crypto">Crypto Coin</label> <br />
+                    <p></p>
+                </div>
+            </div>
+
+            <div id="buttons">
+                <input class="btn btn-primary input" id="submit" type="button" value="Add Expense" />
+                <input class = "btn btn-warning" id="remove-all" type="button" value="Clear All Expenses" />
+                <input class = "btn btn-danger" id="clear" type="button" value="Clear Form" />
+            </div>
+        </form>
+        <p></p>
+
+        <table id="table"></table>
+
+        <script src="index.js"></script>
+    </body>
+</html>
